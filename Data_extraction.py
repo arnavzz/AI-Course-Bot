@@ -1,4 +1,6 @@
-from langchain.document_loaders import UnstructuredURLLoader
+from langchain_community.document_loaders import UnstructuredURLLoader
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 urls = ["https://brainlox.com/courses/category/technical"]
 loader = UnstructuredURLLoader(urls=urls)
